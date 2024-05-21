@@ -1,0 +1,14 @@
+import { Component } from '@angular/core';
+import { FormControl, ReactiveFormsModule } from '@angular/forms';
+
+@Component({
+  selector: 'app-user',
+  standalone: true,
+  imports: [ReactiveFormsModule],
+  templateUrl: './user.component.html',
+  styleUrl: './user.component.css'
+})
+export class UserComponent {
+  fname = new FormControl('');
+  lname = new FormControl('');
+}
